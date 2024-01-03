@@ -28,7 +28,6 @@ jobs:
         with:
           name: build-artifacts
           path: dist/
-          
   test:
     needs: build
     runs-on: self-hosted
