@@ -11,7 +11,7 @@ describe('Server', () => {
   });
 
   it('responds with "Hello World\\n"', done => {
-    http.get('http://127.0.0.1:3001', res => {
+    http.get('http://127.0.0.1:3000', res => {
       res.setEncoding('utf8');
       let data = '';
       res.on('data', chunk => { data += chunk; });
